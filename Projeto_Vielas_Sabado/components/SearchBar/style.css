@@ -1,0 +1,25 @@
+form{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    & .container{
+        position: relative;
+        width: 60%;
+
+        & input{
+            width: 100%;
+            padding: 10px 20px 10px 50px;
+            border-radius: 20px;
+            border: 2px solid black;
+        }
+
+        & img{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translate(0,-50%);
+            width: 20px;
+        }
+    }
+}
