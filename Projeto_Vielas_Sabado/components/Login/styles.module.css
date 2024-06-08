@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #4761B4;
+    width: 400px;
+    height: 370px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Iconfechar {
+    font-size: 2.75rem;
+}
+
+.mensage {
+    border: black solid;
+    height: 320px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.containerInput {
+    border: red solid;
+    width: 100%;
+    height: 320px;
+    justify-content: center;
+}
+
+input {
+    border-radius: 37px;
+    border: none;
+    padding-left: 8px;
+    height: 25px;
+    margin-top: 5px;
+    width: 95%;
+    outline: 1px solid;
+    outline-color: blue;
+}
+
+button {
+    color: orangered;
+    width: 50%;
+    height: 35px;
+}
