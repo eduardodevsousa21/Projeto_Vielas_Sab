@@ -8,10 +8,15 @@ form{
         width: 60%;
 
         & input{
+            font-family: "Space Mono", monospace;
             width: 100%;
             padding: 10px 20px 10px 50px;
-            border-radius: 20px;
+            border-radius: 25px;
             border: 2px solid black;
+        }
+
+        & input::-webkit-input-placeholder{
+            color: lightgray;
         }
 
         & img{
