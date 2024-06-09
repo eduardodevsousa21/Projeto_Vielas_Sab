@@ -7,6 +7,10 @@ function App(){
 
   return (
     <>
+
+     <Header/>
+
+     <SearchBar/>
      
      <Footer/>
 
