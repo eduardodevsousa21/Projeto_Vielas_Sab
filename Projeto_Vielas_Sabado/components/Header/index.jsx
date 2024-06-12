@@ -1,13 +1,13 @@
-import "./style.css"
+import style from "./style.module.css"
 import { SearchBar } from "../SearchBar"
 
 export const Header = ({username,userimg}) => {
     return (
       <>
       <header>
-          <nav>
+          <nav className={style.nav}>
 
-            <ul>
+            <ul className={style.ul}>
               <div id="icon">
 
                 <div></div>
@@ -17,18 +17,18 @@ export const Header = ({username,userimg}) => {
               </div>
             </ul>
             
-            <h1>vielas</h1>
+            <h1 className={style.h1}>vielas</h1>
             
-            <section>
+            <section className={style.section}>
 
             {
             username?
-            <p>olá, {username}</p>
+            <p className={style.p}>olá, {username}</p>
             :
             <a href="">login</a>
             }
 
-            <div id="image" style={{background : userimg ? userimg : "white"}}></div>
+            <div id={style.image} style={{background : userimg ? userimg : "white"}}></div>
             </section>
           </nav>
       </header>
