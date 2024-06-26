@@ -1,0 +1,8 @@
+section.pchcont {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(2,auto);
+    & img{
+        height: 450px;
+    }
+}
