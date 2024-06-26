@@ -1,0 +1,31 @@
+form.form{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    & .container{
+        position: relative;
+        width: 60%;
+
+        & input.input{
+            font-family: "Space Mono", monospace;
+            font-size: 0.8rem;
+            width: 100%;
+            padding: 10px 20px 10px 50px;
+            border-radius: 25px/*25px*/;
+            border: 2px solid black;
+        }
+
+        & input::-webkit-input-placeholder{
+            color: lightgray;
+        }
+
+        & img.img{
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translate(0,-50%);
+            width: 20px;
+        }
+    }
+}

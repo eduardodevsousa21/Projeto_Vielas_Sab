@@ -1,0 +1,54 @@
+nav.nav{
+    display: flex;
+    align-items: center;
+    padding: 8px 50px;
+    background-color: rgb(78, 78, 170);
+    color: white;
+
+    & h1.h1{
+        font-family:"Space Mono", monospace;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 0 0 0 20px;
+    }
+
+    & section.section{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        & a{
+            font-family: "Space Mono", monospace;
+            color: white;
+            text-decoration: none;
+            margin-right: 40px;
+            font-size: 0.9375rem /*15px*/;
+            color: lightgrey;
+        }
+        & p.p{
+            font-family: "Space Mono", monospace;
+            margin-right: 0.625rem /*10px*/;
+            font-size: 0.75rem /*12px*/;
+        }
+        & div#image{
+            border-radius: 50%;
+            padding: 20px;
+        }
+    }
+
+    & ul.ul{
+        
+       
+        padding: 0;
+        margin: 0;
+
+        & > div {
+            width: 50px;
+            display: grid;
+            grid-template-rows:repeat(3,6px);
+            gap:4px;
+            & div{
+                background-color: white;
+            }
+        }
+    }
+}

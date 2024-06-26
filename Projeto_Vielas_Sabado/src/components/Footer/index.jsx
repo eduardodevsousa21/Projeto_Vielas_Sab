@@ -1,9 +1,9 @@
 import styles from './styles.module.css';
-import { CiFacebook } from "react-icons/ci";
+import { CiFacebook} from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { CiTwitter } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci"; 
 
 
 
