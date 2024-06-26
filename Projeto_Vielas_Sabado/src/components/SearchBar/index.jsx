@@ -1,5 +1,5 @@
 import style from "./style.module.css"
-import Lupa from "../../src/assets/lupa.png"
+import Lupa from '../../assets/lupa.png'
 
 export const SearchBar = () => {
     return (
