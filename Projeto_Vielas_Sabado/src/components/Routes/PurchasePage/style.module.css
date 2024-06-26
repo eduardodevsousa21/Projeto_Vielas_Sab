@@ -1,8 +1,54 @@
 section.pchcont {
+    font-family:"Space Mono", monospace;
+    margin: 0 50px;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 55% auto;
     grid-template-rows: repeat(2,auto);
-    & img{
-        height: 450px;
+    & > img{
+        width: 100%;
+    }
+    & section.purchase {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: auto 1fr;
+        margin-left: 10px;
+        padding-bottom: 30px;
+        & h2{
+            margin: 0;
+        }
+        & h3, h4 {
+            font-weight:normal;
+            font-size: 15px;
+        }
+        & form{
+            display: flex;
+            flex-direction: column;
+
+            & input[type="submit"] {
+                margin:auto auto 0 0;
+                color: white;
+                border: none;
+                font-size: 30px;
+                padding: 5px 15px;
+                border-radius: 15px;
+                font-weight: bold;
+                background-color: rgb(78, 78, 170);
+                font-family:"Space Mono", monospace;
+            }
+            & input[type="radio"] {
+                all: unset;
+                padding: 7px;
+                border-radius: 50%;
+                outline: 1px solid black;
+                border: 1px solid black;
+                outline-offset: 4px;
+            }
+        }
+    }
+    & section.description {
+        margin-top: 40px;
+        & img{
+            width: 40%;
+        }
     }
 }
