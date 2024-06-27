@@ -3,6 +3,7 @@ import {Footer} from './components/Footer'
 import { Header } from "./components/Header"
 import { SearchBar } from "./components/SearchBar"
 import { PurchasePage } from './components/Routes/PurchasePage'
+import { Purchase } from './components/Routes/Purchase'
 
 function App(){
 
@@ -13,10 +14,10 @@ function App(){
 
      <SearchBar/>
       
-      <PurchasePage 
-        name="Casarão do Cambuci"
-        desc="Vista da casa de Dona Magnólia do Cambuci"
-        author="Ira Romão"
+      <Purchase
+        type = "Royalty-free"
+        resolution = "Resolução 4000 x 6000 - 300 dpi - RGB"
+        media = "Imagem do Creative"
       />
      
      <Footer/>
