@@ -2,6 +2,11 @@ main.purch{
 
     padding: 0 50px;
 
+    & h2{
+        margin: 0;
+        font-size: clamp(15px,2vw,25px);
+    }
+
     & section.pchcont {
         font-family:"Space Mono", monospace;
         display: grid;
@@ -9,10 +14,6 @@ main.purch{
         grid-template-rows: repeat(2,auto);
         & > img{
             width: 100%;
-        }
-        & h2{
-            margin: 0;
-            font-size: clamp(15px,2vw,25px);
         }
         & p{
             font-weight:normal;
@@ -75,6 +76,25 @@ main.purch{
                 & p{margin: 5px 0;}
             }
         }   
+    }
+
+    & section.fotos {
+        font-family: "Space Mono", monospace;
+        display: flex;
+        flex-direction: column;
+        & > div {
+            margin: 40px 0;
+            align-self: center;
+            width: 70%;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,auto);
+            
+            & * {
+                width: 100%;
+            }
+        }
     }
 
 }
