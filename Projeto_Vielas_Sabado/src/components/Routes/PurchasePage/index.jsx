@@ -42,7 +42,7 @@ export const PurchasePage = () => {
 
         </section>
         
-        <Hastags links={["Ola","Oi"]}/>
+        <Hastags links={["Cambuci","Crise","Alimentação","Saúde","Dinheiro","Cotidiano"]}/>
         
         </>
     )
