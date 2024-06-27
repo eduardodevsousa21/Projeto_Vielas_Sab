@@ -7,18 +7,23 @@ section.pchcont {
     & > img{
         width: 100%;
     }
+    & h2{
+        margin: 0;
+        font-size: clamp(15px,2vw,25px);
+    }
+    & p{
+        font-weight:normal;
+        font-size: clamp(13.5px,1.2vw,0.9375rem) /*15px*/;
+    }
     & section.purchase {
         display: grid;
         grid-auto-flow: row;
         grid-template-rows: auto 1fr;
         margin-left: 10px;
-        padding-bottom: 30px;
-        & h2{
-            margin: 0;
-        }
-        & h3, h4 {
+        padding-bottom: clamp(5px,2.2vw,30px);
+        & h3, h4{
             font-weight:normal;
-            font-size: 15px;
+            font-size: clamp(13.5px,1.2vw,0.9375rem) /*15px*/;
         }
         & form{
             display: flex;
@@ -28,7 +33,7 @@ section.pchcont {
                 margin:auto auto 0 0;
                 color: white;
                 border: none;
-                font-size: 30px;
+                font-size: clamp(1rem,2.5vw,1.875rem) /*30px*/;
                 padding: 5px 15px;
                 border-radius: 15px;
                 font-weight: bold;
@@ -37,18 +42,37 @@ section.pchcont {
             }
             & input[type="radio"] {
                 all: unset;
+                background-color: white;
+                margin: 0 6px;
                 padding: 7px;
                 border-radius: 50%;
-                outline: 1px solid black;
-                border: 1px solid black;
+                outline: 1px solid rgb(196, 196, 196);
+                border: 1px solid rgb(196, 196, 196);
                 outline-offset: 4px;
             }
+            & input[type="radio"]:hover, label:hover{cursor: pointer;}
+            & input[type="radio"]:checked {background-color: red;}
+            & label {font-size: 0.75rem; margin-left: 10px;}
+            & div{margin: 7px 0;display: flex;align-items: center;}
+            & div:nth-child(2){margin-bottom: 15px;}
         }
     }
     & section.description {
+        display: flex;
         margin-top: 40px;
         & img{
-            width: 40%;
+            width: 45%;
+        }
+        & > section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+            & p{margin: 5px 0;}
         }
     }
+}
+
+section.links {
+    display: flex;
 }
