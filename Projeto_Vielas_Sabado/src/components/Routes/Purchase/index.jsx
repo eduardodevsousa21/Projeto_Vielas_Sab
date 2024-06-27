@@ -1,5 +1,6 @@
 import style from "./style.module.css"
 import Bicicletas from "../../../assets/PurchasePageFotos/bicicletas.jpg"
+import { FormSubmiter } from "../../FormSubmiter"
 
 export const Purchase = (props) => {
 
@@ -25,11 +26,16 @@ export const Purchase = (props) => {
                     <input readOnly={true} type="hidden" value={props.type}/>
 
                     <label>Como posso utilizar:</label>
-                    <p>Disponível para todas as utilizações permitidas ao abrigo dos nossos <span>Termos de Licença</span></p>
+                    <p>Disponível para todas as utilizações permitidas ao abrigo dos nossos <a>Termos de Licença</a></p>
 
                     <div className={style.select}> 
                         <input type="radio"/>
-                        <label>Selecionar para compra</label>
+                        <label style={{marginLeft:5}}>Selecionar para compra</label>
+                    </div>
+
+                    <div className={style.other}>
+                        <p style={{marginBlockEnd:20}}>Subtotal: R$ {props.sub}</p>
+                        <FormSubmiter text={"prosseguir com a compra"} fontsize={"clamp(1rem,1.5vw,1.25rem)"}/>
                     </div>
                 </form>
                 

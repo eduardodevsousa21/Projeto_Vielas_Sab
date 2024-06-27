@@ -12,15 +12,22 @@ main.confirmpurch {
         margin: 0;
     }
 
+    & p,label{font-size: clamp(0.75rem,1.5vw,1rem);}
+
     & section.product {
 
         & form{
             position: relative;
             margin-top:40px;
             display: grid;
-            grid-template-columns: 450px auto 1fr;
+            grid-template-columns: clamp(100px,34vw,450px) auto 1fr;
             grid-template-rows: repeat(7,auto);
             padding: 20px;
+
+            & a{
+                color: var(--cred);
+                text-decoration: underline;
+            }
 
         
             & input{
@@ -29,6 +36,19 @@ main.confirmpurch {
                 outline: none;
                 font-family: "Space Mono", monospace;
                 text-wrap: wrap;
+            }
+
+            & input[type="radio"]{
+                all: unset;
+                padding: 5px;
+                outline: 1px solid rgb(161, 161, 161);
+                border: 1px solid rgb(161, 161, 161);
+                outline-offset: 2px;
+                margin: 0 4px;
+                background-color: inherit;
+            }
+            & input:checked{
+                background-color: red;
             }
 
             & > label{
@@ -53,10 +73,19 @@ main.confirmpurch {
                 grid-column-start: 1;
                 grid-column-end:2;
             }
+            & div.other{
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 7;
+                grid-row-end: 8;
+                margin-top: 70px;
+            }
+
         }
 
         & form::before {
             content: "";
+            z-index: -1;
             width: 100%;
             height: 100%;
             position: absolute;

@@ -1,0 +1,10 @@
+input[type="submit"]{
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: var(--cblue);
+    font-family:"Space Mono", monospace;
+    /* font-size 25px*/;
+}
