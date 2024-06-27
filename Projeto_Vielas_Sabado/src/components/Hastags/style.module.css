@@ -3,6 +3,9 @@ section.hastags{
     display: flex;
     justify-content: center;
     gap: 40px;
+    font-family:"Space Mono", monospace;
+    font-weight: 505;
+    font-style: italic;
 
     & a{
         text-decoration: underline;

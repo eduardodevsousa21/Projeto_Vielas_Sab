@@ -12,9 +12,12 @@ function App(){
      <Header/>
 
      <SearchBar/>
-     <main>
-        <PurchasePage/>
-     </main>
+      
+      <PurchasePage 
+        name="Casarão do Cambuci"
+        desc="Vista da casa de Dona Magnólia do Cambuci"
+        author="Ira Romão"
+      />
      
      <Footer/>
 
