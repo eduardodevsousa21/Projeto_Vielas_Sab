@@ -10,7 +10,7 @@ import Supermercado from "../../../assets/PurchasePageFotos/supermercado.jpg"
 import Trabalhadores from "../../../assets/PurchasePageFotos/trabalhadores.jpg"
 import Vacina from "../../../assets/PurchasePageFotos/vacina.jpg"
 import { Hastags } from "../../Hastags"
-import { FormSubmiter } from "../../FormSubmiter"
+import { PurchaseButton } from "../../PurchaseButton"
 
 export const PurchasePage = (props) => {
 
@@ -35,7 +35,7 @@ export const PurchasePage = (props) => {
                             <input type="radio" id="package" name="package"/>
                             <label htmlFor="package">Adicionar a meu pacote (planos)</label>
                         </div>
-                        <FormSubmiter 
+                        <PurchaseButton
                             text={"COMPRAR"} 
                             fontsize={"clamp(1rem,2.5vw,1.875rem)"} 
                             margin={"auto auto 0 0"}

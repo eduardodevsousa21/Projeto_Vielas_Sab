@@ -1,9 +1,6 @@
 import style from "./style.module.css"
 import { useState, useEffect } from "react"
 
-const Tag = ({text}) => {
-    return <a>#{text}</a>
-}
 
 export const Hastags = (props) => {
 
@@ -14,12 +11,11 @@ export const Hastags = (props) => {
     if (links) {
 
         for (var i=0;i<links.length;i++) {
-            let a = <Tag text={links[i]}/>
-            
-            myreturn.push(a)
+        
+            myreturn.push(<li key={i}><a>#{links[i]}</a></li>)
         }
 
     }
 
-    return <><section className={style.hastags}>{myreturn}</section></>
+    return <ul className={style.hastags}>{myreturn}</ul>
 }

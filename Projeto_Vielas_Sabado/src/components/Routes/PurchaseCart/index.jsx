@@ -2,7 +2,7 @@ import style from "./style.module.css"
 import Bicicletas from "../../../assets/PurchasePageFotos/bicicletas.jpg"
 import { Product } from "../../Product"
 
-export const Purchase = (props) => {
+export const PurchaseCart = () => {
 
     return(
         <main className={style.confirmpurch}>
@@ -11,6 +11,14 @@ export const Purchase = (props) => {
 
             <section className={style.products}>
                 <form>
+                    <Product
+                        type = "Royalty-free"
+                        resolution = "Resolução 4000 x 6000 - 300 dpi - RGB"
+                        media = "Imagem do Creative"
+                        sub = "10,00"
+                        img = {Bicicletas}
+                        last = {false}
+                    />
                     <Product
                         type = "Royalty-free"
                         resolution = "Resolução 4000 x 6000 - 300 dpi - RGB"

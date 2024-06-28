@@ -1,5 +1,5 @@
 import style from "./style.module.css"
-import { FormSubmiter } from "../FormSubmiter"
+import { PurchaseButton } from "../PurchaseButton"
 
 export const Product = (props) => {
 
@@ -32,7 +32,7 @@ export const Product = (props) => {
             {props.last == true ? 
             <div className={style.other}>
                 <p style={{marginBlockEnd:20}}>Subtotal: R$ {props.sub}</p>
-                <FormSubmiter text={"prosseguir com a compra"} fontsize={"clamp(1rem,1.5vw,1.25rem)"}/>
+                <PurchaseButton text={"prosseguir com a compra"} fontsize={"clamp(1rem,1.5vw,1.25rem)"}/>
             </div>
             : 
             null
