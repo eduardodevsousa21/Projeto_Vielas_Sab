@@ -1,4 +1,5 @@
 section.product{
+    padding: 20px;
     grid-template-columns: clamp(100px,34vw,450px) auto 1fr;
     display: grid;
     position: relative;

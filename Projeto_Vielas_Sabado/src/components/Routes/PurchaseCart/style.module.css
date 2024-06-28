@@ -2,7 +2,7 @@ main.confirmpurch {
 
     font-family:"Space Mono", monospace;
 
-    padding: 0 50px 80px 50px;
+    padding: 0 50px;
 
     & h2{
         margin: 50px 0 10px 0;
@@ -16,10 +16,8 @@ main.confirmpurch {
 
     & section.products {
 
-        & form{
-            margin-top:40px;
-            padding: 20px;
-        }
+        margin:40px 0 80px 0;
+
 
     }
 }

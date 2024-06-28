@@ -15,7 +15,7 @@ function App(){
 
      <SearchBar/>
       
-      <PurchasePage/>
+      <PurchaseCart/>
      
      <Footer/>
 
